@@ -7,6 +7,13 @@ namespace WebAppGit.Controllers
     [ApiController]
     public class NameController : ControllerBase
     {
+        public NameController() { }
+        [HttpGet]
+
+        public IActionResult Get()
+        {
+            return Ok(new { Name = "Earl Schreck" });
+        }
 
     }
 }
